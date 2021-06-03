@@ -1,0 +1,200 @@
+.board
+    margin-top: 100px
+    &-wrap
+        display: flex
+        justify-content: space-between
+.advice
+    max-width: 747px
+    &__more-books
+        display: flex
+        justify-content: center
+        text-transform: uppercase
+        margin-top: 27px
+        background-color: rgba(21, 101, 216, 0.1)
+        border-radius: 8px
+        padding-top: 25px
+        padding-bottom: 27px
+    &__link
+        text-decoration: none
+        font-family: Roboto Condensed
+        font-style: normal
+        font-weight: bold
+        font-size: 16px
+        line-height: 20px
+        text-align: center
+        letter-spacing: 0.2px
+        color: $second
+    &-wrap
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        flex-wrap: wrap
+    &__title
+        font-family: Roboto Condensed
+        font-style: normal
+        font-weight: bold
+        font-size: 32px
+        line-height: 40px
+        letter-spacing: 0.2px
+        color: $first
+    &__button
+        color: $light
+        font-family: Open Sans
+        font-style: normal
+        font-weight: bold
+        font-size: 16px
+        line-height: 22px
+        border-radius: 2000px
+        border: none
+        background-color: $first
+        padding: 7px 20px
+    &-card
+        border: 1px solid $card-br
+        border-radius: 8px
+        display: flex
+        justify-content: space-between
+        max-width: 358px
+        min-height: 260px
+        padding: 11px 0 11px 11px
+        margin-top: 29px
+        &-wrapper
+            min-width: 160px
+            height: 238px
+            &__img
+                height: 100%
+                width: 100%
+                object-fit: cover
+                border-radius: 8px
+                
+        &-info
+            padding: 16px 16px 13px 19px
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            min-width: 189px
+            &__title
+                font-family: Roboto
+                font-style: normal
+                font-weight: 500
+                font-size: 22px
+                line-height: 32px
+                letter-spacing: 0.2px
+                color: $first
+            &__subtitle
+                font-family: Open Sans
+                font-style: normal
+                font-weight: normal
+                font-size: 16px
+                line-height: 22px
+                color: $first
+                margin-top: -7px
+            &__price
+                font-family: Roboto Condensed
+                font-style: normal
+                font-weight: bold
+                font-size: 20px
+                line-height: 24px
+                letter-spacing: 0.2px
+                color: $second
+    &-like
+        &__img
+            width: 18px
+            height: 21px
+            fill: $like
+            margin-top: 10px
+            margin-right: 13px
+            
+.data
+    display: flex
+    justify-content: space-between
+    align-items: center
+.the-best
+    max-width: 360px
+    border: 1px solid red
+    border-radius: 8px
+    &__best-books
+        display: flex
+        justify-content: center
+        text-transform: uppercase
+        margin-top: 44px
+        margin-bottom: 25px
+    &__link
+        text-decoration: none
+        font-family: Roboto Condensed
+        font-style: normal
+        font-weight: bold
+        font-size: 16px
+        line-height: 20px
+        text-align: center
+        letter-spacing: 0.2px
+        color: $second
+        position: relative
+        &:after
+            content: ""
+            display: block
+            width: 312px
+            height: 1px
+            background-color: $card-br
+            position: absolute
+            top: -26px
+            left: -100px
+            z-index: 119
+
+    &__button
+        font-family: Open Sans
+        font-style: normal
+        font-weight: bold
+        font-size: 16px
+        line-height: 22px
+        color: $light
+        padding: 7px 20px
+        background-color: $first
+        border-radius: 2000px
+        border: none
+    &-wrap
+        display: flex
+        flex-direction: column
+        margin-top: 29px
+        background-color: rgba(179, 186, 197, 0.1)
+         
+    &-card
+        display: flex
+        padding: 24px 0px 12px 24px
+        &-wrapper
+            min-width: 119px
+            height: 177px
+            &__img
+                width: 100%
+                height: 100%
+                object-fit: cover
+                border-radius: 6px
+        &-info
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            padding: 13px 22px 6px 26px
+            &__title
+                font-family: Roboto
+                font-style: normal
+                font-weight: 500
+                font-size: 22px
+                line-height: 32px
+                letter-spacing: 0.2px
+                color: $first
+            &__price
+                font-family: Roboto Condensed
+                font-style: normal
+                font-weight: bold
+                font-size: 20px
+                line-height: 24px
+                letter-spacing: 0.2px
+                color: $second
+                margin-top: -9px
+    &__title
+        font-family: Roboto Condensed
+        font-style: normal
+        font-weight: bold
+        font-size: 32px
+        line-height: 40px
+        letter-spacing: 0.2px
+        color: $first
