@@ -4,6 +4,24 @@
 @media (max-width: 992px)
     .container
         max-width: 700px
+    .book
+        margin-top: 36px
+        &-wrap
+            display: flex
+            flex-direction: column
+            align-items: center
+        &__info
+            display: flex
+            flex-direction: column
+            align-items: center
+        &-title
+            text-align: center
+        &-image
+            margin-top: 36px
+    .button
+        &-wrapper
+            display: flex
+            justify-content: center
 @media (max-width: 767px)
     .container
         max-width: 576px
@@ -73,3 +91,42 @@
     .container, .navbar__container
         max-width: 280px
         width: 100%
+    .book
+        margin-top: 55px
+        margin-bottom: 28px
+        &-title
+            font-size: 32px
+            line-height: 40px
+            margin-bottom: 25px
+        &-image
+            width: 280px
+            height: 332px
+            &__wrapper
+                width: 143px
+                height: 214px
+        &__subtitle
+            font-weight: normal
+            font-size: 16px
+        &__text
+            font-size: 16px
+            line-height: 23px
+            text-align: center
+            margin-top: 32px
+            margin-bottom: 17px
+        &__button
+            // font-size: 16px
+            // line-height: 22px
+            width: 176px
+            &_left
+                padding: 9px 20px
+            &_right
+                margin-top: 15px
+                margin-left: 0
+                padding: 7px 27px
+                font-size: 16px
+                line-height: 22px
+    .button
+        &-wrapper
+            display: flex
+            flex-direction: column
+            justify-content: space-between
