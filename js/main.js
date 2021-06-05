@@ -4,54 +4,6 @@ $(document).ready(function () {
     $(".info-menu_mobile").toggleClass("info-menu_mobile-visible");
   });
 
-  // $(".catalog__slider").slick({
-  //   infinite: true,
-  //   slidesToShow: 4,
-  //   slidesToScroll: 1,
-  //   // rows: 2,
-  //   nextArrow: $(".catalog-slider__button--next"),
-  //   prevArrow: $(".catalog-slider__button--prev"),
-  //   responsive: [
-  //     {
-  //       breakpoint: 1200,
-  //       settings: {
-  //         slidesToShow: 2,
-  //         slidesToScroll: 1,
-  //         rows: 2,
-  //       },
-  //     },
-  //     {
-  //       breakpoint: 600,
-  //       settings: {
-  //         slidesToShow: 2,
-  //         slidesToScroll: 1,
-  //         rows: 2,
-  //       },
-  //     },
-  //     {
-  //       breakpoint: 480,
-  //       settings: {
-  //         slidesToShow: 2,
-  //         slidesToScroll: 1,
-  //         rows: 2,
-  //       },
-  //     },
-  //   ],
-  // });
-
-  // const catalogSwiper = new Swiper(".catalog__slider", {
-  //   // Optional parameters
-  //   loop: true,
-  //   slidesPerView: 4,
-  //   slidesPerColumn: 1,
-  //   spaceBetween: 26,
-  //   // Navigation arrows
-  //   navigation: {
-  //     nextEl: ".catalog-slider__button--next",
-  //   },
-  //   keyboard: true,
-  // });
-
   var owl = $(".owl-carousel")
     .owlCarousel({
       responsive: {
@@ -148,4 +100,41 @@ $(document).ready(function () {
       },
     })
     .data("owlCarousel");
+
+  const unpublishedSwiper = new Swiper(".unpublished__slider", {
+    loop: false,
+    slidesPerView: 5,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: ".unpublished-slider__button--next",
+      prevEl: ".unpublished-slider__button--prev",
+      disabledClass: "unpublished-slider__disabled",
+    },
+    keyboard: true,
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      576: {
+        slidesPerView: 2,
+        spaceBetween: 40,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      },
+      // when window width is >= 480px
+      992: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+      // when window width is >= 640px
+      1200: {
+        slidesPerView: 5,
+        spaceBetween: 30,
+      },
+    },
+  });
 });

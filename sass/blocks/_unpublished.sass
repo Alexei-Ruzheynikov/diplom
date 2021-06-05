@@ -1,0 +1,56 @@
+.unpublished
+    background-color: $first
+    padding-top: 61px
+    padding-bottom: 80px
+    &-top
+        display: flex
+        justify-content: space-between
+        margin-bottom: 54px
+        &__buttons
+            display: flex
+            min-width: 132px
+            justify-content: space-between
+        &__title
+            font-family: Roboto Condensed
+            font-style: normal
+            font-weight: bold
+            font-size: 36px
+            line-height: 48px
+            letter-spacing: 0.2px
+            color: $light
+    &-bottom
+    &__slider
+        display: flex
+        justify-content: space-between
+    &-slider
+        &__disabled
+            opacity: 0.4
+        &__button
+            width: 55px
+            height: 55px
+            border-radius: 100%
+            border: 2px solid $light
+            cursor: pointer
+            background-repeat: no-repeat
+            background-position: center
+            &--next
+                background-image: url(../img/arrow-next-2.svg)
+                border: 2px solid $light
+                
+            &--prev
+                background-image: url(../img/arrow-prev.svg)
+                border: 2px solid $light
+        &__slide
+            height: 298px
+            max-width: 204px
+            width: 204px
+            
+        &__img
+            height: 100%
+            width: 100%
+            object-fit: cover
+            box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.08)
+            border-radius: 8px
+
+.unpublished-slider__disabled
+    color: $third
