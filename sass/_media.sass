@@ -100,6 +100,8 @@
         width: 100%
     .catalog__container
         max-width: 296px
+    .history__container
+        max-width: 300px
     .book
         margin-top: 55px
         margin-bottom: 28px
@@ -402,3 +404,23 @@
             &__img
                 min-width: 205px
                 min-height: 300px
+    .history
+        &-medium
+            &::after
+                left: 10px
+            &__video
+                max-width: 300px
+                height: 210px
+                background-position: center center
+                background-size: 303px
+                background-image: url(../img/history-1b.png)
+                // background-repeat: none
+
+                
+            &__icon
+                left: 170px
+        &-bottom
+            &__sect:nth-child(3)
+                display: none
+            &__icon
+                left: 60px

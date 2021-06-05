@@ -4,6 +4,8 @@ $(document).ready(function () {
     $(".info-menu_mobile").toggleClass("info-menu_mobile-visible");
   });
 
+  // $("div.hisory-top__new").remove();
+
   var owl = $(".owl-carousel")
     .owlCarousel({
       responsive: {

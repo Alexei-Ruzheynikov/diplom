@@ -1,9 +1,114 @@
-.history-medium__video
-
-.history-medium__icon
-    width: 100px
-    height: 100px
-    fill: red
-    position: relative
-    top: 0
-    left: 0
+.history
+    margin-top: 103px
+    margin-bottom: 100px
+    &__container 
+        max-width: 1005px
+    &-top
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        margin-right: 39px
+        margin-bottom: 20px
+        &__new
+            display: block
+        &__title
+            font-family: Roboto Condensed
+            font-style: normal
+            font-weight: bold
+            font-size: 48px
+            line-height: 60px
+            letter-spacing: 0.2px
+            color: $first
+        &__subtitle
+            font-family: Open Sans
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            line-height: 32px
+            color: $third
+            max-width: 380px
+            text-align-last: left
+    &-medium
+        margin-bottom: -70px
+        &__video
+            // background-color: red
+            position: relative
+            height: 380px
+            max-width: 1005px
+            background-image: url(../img/history-1d.png)
+            // background-size: cover
+        &__img
+            height: 100%
+            width: 100%
+            object-fit: cover
+            
+            
+        &__icon
+            width: 30px
+            height: 39px
+            fill: $second
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            left: 488px
+            z-index: 200    
+        &:after
+            content: ""
+            background-repeat: no-repeat
+            background-position: center
+            display: block
+            width: 100px
+            height: 100px
+            border-radius: 100%
+            background-color: $light
+            position: relative
+            left: 453px
+            top: -243px
+            z-index: 5
+    &-bottom
+        display: flex
+        justify-content: space-between
+        &__sect
+            // min-height: 286px
+        &__title
+            font-family: Roboto
+            font-style: normal
+            font-weight: 500
+            font-size: 22px
+            line-height: 32px
+            letter-spacing: 0.2px
+            color: $first
+            
+        &__subtitle
+            font-family: Open Sans
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 22px
+            margin-top: 9px
+        &__video
+            position: relative
+            height: 200px
+            max-width: 315px
+        &__img
+            height: 100%
+            width: 100%
+            object-fit: cover
+        &__icon
+            width: 30px
+            height: 39px
+            fill: $light
+            position: absolute
+            top: 51%
+            transform: translateY(-50%)
+            left: 144px
+            z-index: 200 
+            &-plus
+                width: 14px
+                height: 21px
+                fill: $second
+        &__info
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin-top: 23px
