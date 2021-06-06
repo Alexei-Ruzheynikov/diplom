@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/owl.theme.default.min.css" />
 
     <!-- <link rel="stylesheet" href="css/slick.css" /> -->
@@ -557,20 +558,12 @@
         <div class="unpublished-top">
           <div class="unpublished-top__title">Неизданные книги</div>
           <div class="unpublished-top__buttons">
-            <div
-              class="
-                unpublished-slider__button unpublished-slider__button--prev
-              "
-            >
+            <div class="unpublished__button unpublished__button_prev">
               <!-- <svg class="icon">
                 <use xlink:href="#arrow-prev"></use>
               </svg> -->
             </div>
-            <div
-              class="
-                unpublished-slider__button unpublished-slider__button--next
-              "
-            >
+            <div class="unpublished__button unpublished__button_next">
               <!-- <svg class="unpublished-svg">
                 <use xlink:href="#arrow-next"></use>
               </svg> -->
@@ -633,26 +626,31 @@
           <div class="history-top__title">История Автора</div>
           <div class="history-top__subtitle">
             Это раздел авторского рассказа. Каждую неделю мы стараемся
-            рассказать вам историю писателя. Расскажем всем
-            <div class="hisory-top__new"></div>
-            о закулисье их книг.
+            рассказать вам историю писателя. Расскажем всем о закулисье их книг.
           </div>
         </div>
         <div class="history-medium">
           <div class="video history-medium__video">
             <!-- <img class="history-medium__img" src="img/history-1c.png" alt="" /> -->
-            <svg class="history-medium__icon">
-              <use xlink:href="img/sprite.svg#play"></use>
-            </svg>
+            <a data-fancybox href="https://www.youtube.com/watch?v=wInZ_WzVOvU">
+              <svg class="history-medium__icon">
+                <use xlink:href="img/sprite.svg#play"></use>
+              </svg>
+            </a>
           </div>
         </div>
         <div class="history-bottom">
           <div class="history-bottom__sect">
             <div class="video history-bottom__video">
               <img class="history-bottom__img" src="img/history-2.png" alt="" />
-              <svg class="history-bottom__icon">
-                <use xlink:href="img/sprite.svg#play"></use>
-              </svg>
+              <a
+                data-fancybox
+                href="https://www.youtube.com/watch?v=E-ceR_lY0-w"
+              >
+                <svg class="history-bottom__icon">
+                  <use xlink:href="img/sprite.svg#play"></use>
+                </svg>
+              </a>
             </div>
             <div class="history-bottom__info">
               <div class="history-bottom__title">Emelda Scandroot</div>
@@ -663,11 +661,16 @@
             <div class="history-bottom__subtitle">Author of Books Tittle</div>
           </div>
           <div class="history-bottom__sect">
-            <div class="video history-bottom__video">
-              <img class="history-bottom__img" src="img/history-3.png" alt="" />
-              <svg class="history-bottom__icon">
-                <use xlink:href="img/sprite.svg#play"></use>
-              </svg>
+            <div class="video history-bottom__video-3">
+              <!-- <img class="history-bottom__img" src="img/history-3.png" alt="" /> -->
+              <a
+                data-fancybox
+                href="https://www.youtube.com/watch?v=phHoI8uZFD8"
+              >
+                <svg class="history-bottom__icon">
+                  <use xlink:href="img/sprite.svg#play"></use>
+                </svg>
+              </a>
             </div>
             <div class="history-bottom__info">
               <div class="history-bottom__title">Mar Rueda</div>
@@ -680,9 +683,14 @@
           <div class="history-bottom__sect">
             <div class="video history-bottom__video">
               <img class="history-bottom__img" src="img/history-4.png" alt="" />
-              <svg class="history-bottom__icon">
-                <use xlink:href="img/sprite.svg#play"></use>
-              </svg>
+              <a
+                data-fancybox
+                href="https://www.youtube.com/watch?v=zRuaKl_M8RM"
+              >
+                <svg class="history-bottom__icon">
+                  <use xlink:href="img/sprite.svg#play"></use>
+                </svg>
+              </a>
             </div>
             <div class="history-bottom__info">
               <div class="history-bottom__title">Nembo Lukeni</div>
@@ -700,6 +708,7 @@
     <!-- <script src="js/slick.js"></script> -->
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/owl2row.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
 
     <script src="js/main.js"></script>
   </body>

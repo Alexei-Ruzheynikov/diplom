@@ -53,7 +53,7 @@
             left: 0
             top: 0
             right: 0
-            z-index: 99px
+            z-index: 99
     .info
         &-menu, &__button
             display: none
@@ -90,6 +90,24 @@
             width: 22px
             height: 2px
             background-color: $four
+    // .book
+    //     &-image
+    //         &__img
+    //             z-index: -10
+    // .the-best
+    //     &__link
+    //         z-index: -10
+    // .catalog
+    //     &-wrap
+    //         &::after
+    //             z-index: -10
+    //     &-wrapper
+    //         z-index: -10
+    // .unpublished
+    //     position: relative
+    //     z-index: -11
+    //     &__slider
+    //         z-index: -10
 @media (max-width: 576px)
     .container
         max-width: 480px
@@ -369,7 +387,7 @@
     .owl-nav
         top: 99%
     .unpublished
-        padding-bottom: 137px
+        padding-bottom: 118px
         &-top
             position: relative
             justify-content: center
@@ -397,17 +415,45 @@
             
         &-slider 
             max-width: 205px
-            &__button
-                width: 48px
-                height: 48px
+        &__button
+            width: 48px
+            height: 48px
 
             &__img
                 min-width: 205px
                 min-height: 300px
     .history
+        margin-top: 44px
+        &-top
+            flex-direction: column
+            align-items: center
+            margin-right: 0
+            max-width: 280px
+            margin: auto
+            margin-bottom: 36px
+            
+            &__title
+                font-family: Roboto Condensed
+                font-style: normal
+                font-weight: bold
+                font-size: 28px
+                line-height: 36px
+                text-align: center
+                letter-spacing: 0.2px
+            &__subtitle
+                font-family: Open Sans
+                font-style: normal
+                font-weight: normal
+                font-size: 18px
+                line-height: 25px
+                text-align: center
+                margin-top: 23px
         &-medium
             &::after
-                left: 10px
+                left: 122px
+                top: -132px
+                width: 56px
+                height: 56px
             &__video
                 max-width: 300px
                 height: 210px
@@ -418,9 +464,49 @@
 
                 
             &__icon
-                left: 170px
+                left: 142px
+                width: 17px
+                height: 22px
+                top: 51%
         &-bottom
+            margin-top: 34px
+            &__info
+                flex-direction: column
+                margin-top: 16px
             &__sect:nth-child(3)
                 display: none
             &__icon
                 left: 60px
+                width: 21px
+                height: 27px
+                &-plus
+                    position: absolute
+                    margin-top: 62px
+                    width: 10px
+                    height: 14px  
+            &__video
+                max-width: 140px
+                height: 138px
+                &-3
+                    max-width: 140px
+                    width: 140px
+                    height: 138px
+                    background-position: center center
+                    background-size: 227px
+                    background-image: url(../img/history-3b.png)
+
+            &__title
+                font-family: Roboto
+                font-style: normal
+                font-weight: 500
+                font-size: 16px
+                line-height: 20px
+                text-align: center
+                letter-spacing: 0.2px
+            &__subtitle
+                font-family: Open Sans
+                font-style: normal
+                font-weight: normal
+                font-size: 12px
+                line-height: 20px
+                text-align: center

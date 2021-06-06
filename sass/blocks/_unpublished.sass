@@ -25,21 +25,21 @@
     &-slider
         &__disabled
             opacity: 0.4
-        &__button
-            width: 55px
-            height: 55px
-            border-radius: 100%
+    &__button
+        width: 55px
+        height: 55px
+        border-radius: 100%
+        border: 2px solid $light
+        cursor: pointer
+        background-repeat: no-repeat
+        background-position: center
+        &_next
+            background-image: url(../img/arrow-next-2.svg)
             border: 2px solid $light
-            cursor: pointer
-            background-repeat: no-repeat
-            background-position: center
-            &--next
-                background-image: url(../img/arrow-next-2.svg)
-                border: 2px solid $light
-                
-            &--prev
-                background-image: url(../img/arrow-prev.svg)
-                border: 2px solid $light
+            
+        &_prev
+            background-image: url(../img/arrow-prev.svg)
+            border: 2px solid $light
         &__slide
             height: 298px
             max-width: 204px

@@ -5,6 +5,9 @@ $(document).ready(function () {
   });
 
   // $("div.hisory-top__new").remove();
+  // if ($(window).width() < 576) {
+  //   $("div.hisory-top__new").remove();
+  // }
 
   var owl = $(".owl-carousel")
     .owlCarousel({
@@ -108,8 +111,8 @@ $(document).ready(function () {
     slidesPerView: 5,
     spaceBetween: 30,
     navigation: {
-      nextEl: ".unpublished-slider__button--next",
-      prevEl: ".unpublished-slider__button--prev",
+      nextEl: ".unpublished__button_next",
+      prevEl: ".unpublished__button_prev",
       disabledClass: "unpublished-slider__disabled",
     },
     keyboard: true,
