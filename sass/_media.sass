@@ -696,7 +696,7 @@
         &__subscribe
             margin-top: 31px
     .subscribe
-
+        min-width: 100%
         &__input
             width: 272px
             padding-top: 28px
@@ -704,13 +704,79 @@
             padding-left: 47px
             padding-right: 47px
             &-group
-                margin-left: 116px
+                margin-left: 59px
         &__button
             top: 55px
-            right: 70px
+            right: 12px
             padding: 20px 70px
         &__icon
-            left: 137px
+            left: 79px
             top: 20px
-    .invalid
-        
+    .footer
+        &__item
+            padding-bottom: 13px
+        &__ref
+            font-family: Open Sans
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 20px
+        &__title
+            font-family: Open Sans
+            font-style: normal
+            font-weight: bold
+            font-size: 16px
+            line-height: 22px
+            padding-bottom: 2px
+        &__list
+            min-width: 115px
+            margin-right: 22px
+            margin-left: 3px
+            margin-bottom: 10px
+            &:nth-child(2)
+                margin-left: 8px
+                margin-right: 0
+            &:nth-child(4)
+                margin-left: 8px
+                margin-right: 0
+        &__icon
+            width: 16px
+            height: 18px
+            fill: $third
+            position: relative
+            top: 31px
+            &_after
+                content: ''
+                width: 42px
+                height: 42px
+                display: block
+                position: absolute
+                top: 0
+                left: 0
+                background-color: red
+                    // rgba(90, 113, 132, 0.1)
+        &-wrap
+            flex-direction: column
+            padding-top: 48px
+        &__navigation
+            order: -1
+            flex-wrap: wrap
+        &__bottom
+            display: none
+        &__main
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-right: 0
+            margin-left: 25px
+            margin-top: 5px
+            padding-bottom: 64px
+        &__subtitle
+            max-width: 280px
+            text-align: center
+            margin-top: 12px
+            margin-left: -4px
+        &__social-network
+            margin-top: -7px
+            margin-left: 11px
+            
