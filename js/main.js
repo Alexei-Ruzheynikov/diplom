@@ -142,4 +142,31 @@ $(document).ready(function () {
       },
     },
   });
+
+  // Обработка форм
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Enter your name",
+          minlength: "At least 2 letters",
+        },
+        email: {
+          required: "Введите email",
+          email: "Формат: name@domain.com",
+        },
+        emailstwo: {
+          required: "Enter your contact email",
+          email: "Format email of name@domain.com",
+        },
+        phone: {
+          required: "Enter your phone number",
+          minlength: "At least 10 characters",
+        },
+      },
+    });
+  });
+
+  $(".phone").mask("+7 (999) 999-99-99");
 });
