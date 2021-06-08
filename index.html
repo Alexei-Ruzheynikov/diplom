@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ehya</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Condensed:wght@700&family=Roboto:wght@500&display=swap"
@@ -37,7 +39,13 @@
                 <a href="#" class="info-menu__link">Блог</a>
               </li>
             </ul>
-            <button class="button info__button">Получить</button>
+            <button
+              data-toggle="modal"
+              data-href=".info-modal"
+              class="button info__button"
+            >
+              Получить
+            </button>
             <button class="button navbar__button">
               <span class="button__line"></span
               ><span class="button__line"></span
@@ -55,6 +63,8 @@
               </li>
               <li class="info-menu__item info-menu__item_mobile-visible">
                 <button
+                  data-toggle="modal"
+                  data-href=".info-modal"
                   class="
                     button
                     info-menu__button info-menu__button_mobile-visible
@@ -85,17 +95,21 @@
               стратегиями ценообразования на творческую работу.
             </p>
             <div class="button-wrapper">
-              <button class="button book__button book__button_left">
+              <a href="#" class="button book__button book__button_left">
                 Купить сейчас
-              </button>
-              <button class="button book__button book__button_right">
+              </a>
+              <a href="#" class="button book__button book__button_right">
                 Читать демо
-              </button>
+              </a>
             </div>
           </div>
           <div class="book-image">
             <div class="book-image__wrapper">
-              <img src="img/book.png" alt="" class="book-image__img" />
+              <img loading="lazy"
+                src="img/book.png"
+                alt="Book: The psychology"
+                class="book-image__img"
+              />
             </div>
           </div>
         </div>
@@ -105,13 +119,13 @@
       <div class="container">
         <div class="board-wrap">
           <div class="advice">
-            <div class="advice__title">Рекомендации</div>
+            <h2 class="advice__title">Рекомендации</h2>
             <div class="advice-wrap">
               <div class="advice-card">
                 <div class="advice-card-wrapper">
-                  <img
+                  <img loading="lazy"
                     src="img/advice-1.png"
-                    alt=""
+                    alt="Book: The World"
                     class="advice-card-wrapper__img"
                   />
                 </div>
@@ -122,7 +136,7 @@
                   <div class="advice-card-info__subtitle">Art & Design</div>
                   <div class="advice-card-info__price">$25.00</div>
                   <div class="data advice__data">
-                    <button class="button advice__button">Купить</button>
+                    <a href="#" class="button advice__button">Купить</a>
                     <div class="advice-like">
                       <svg class="advice-like__img">
                         <use xlink:href="img/sprite.svg#heart"></use>
@@ -134,9 +148,9 @@
 
               <div class="advice-card">
                 <div class="advice-card-wrapper">
-                  <img
+                  <img loading="lazy"
                     src="img/advice-2.png"
-                    alt=""
+                    alt="Book: Educated"
                     class="advice-card-wrapper__img"
                   />
                 </div>
@@ -148,7 +162,7 @@
                   <div class="advice-card-info__subtitle">Education</div>
                   <div class="advice-card-info__price">$28.00</div>
                   <div class="data advice__data">
-                    <button class="button advice__button">Купить</button>
+                    <a href="#" class="button advice__button">Купить</a>
                     <div class="advice-like">
                       <svg class="advice-like__img">
                         <use xlink:href="img/sprite.svg#heart"></use>
@@ -160,9 +174,9 @@
 
               <div class="advice-card">
                 <div class="advice-card-wrapper">
-                  <img
+                  <img loading="lazy"
                     src="img/advice-3.png"
-                    alt=""
+                    alt="Book: The Blue"
                     class="advice-card-wrapper__img"
                   />
                 </div>
@@ -173,7 +187,7 @@
                   <div class="advice-card-info__subtitle">Novel</div>
                   <div class="advice-card-info__price">$19.50</div>
                   <div class="data advice__data">
-                    <button class="button advice__button">Купить</button>
+                    <a href="#" class="button advice__button">Купить</a>
                     <div class="advice-like">
                       <svg class="advice-like__img">
                         <use xlink:href="img/sprite.svg#heart"></use>
@@ -185,9 +199,9 @@
 
               <div class="advice-card">
                 <div class="advice-card-wrapper">
-                  <img
+                  <img loading="lazy"
                     src="img/advice-4.png"
-                    alt=""
+                    alt="Book: There There"
                     class="advice-card-wrapper__img"
                   />
                 </div>
@@ -198,7 +212,7 @@
                   <div class="advice-card-info__subtitle">Novel</div>
                   <div class="advice-card-info__price">$20.00</div>
                   <div class="data advice__data">
-                    <button class="button advice__button">Купить</button>
+                    <a href="#" class="button advice__button">Купить</a>
                     <div class="advice-like">
                       <svg class="advice-like__img">
                         <use xlink:href="img/sprite.svg#heart"></use>
@@ -210,9 +224,9 @@
 
               <div class="advice-card">
                 <div class="advice-card-wrapper">
-                  <img
+                  <img loading="lazy"
                     src="img/advice-5.png"
-                    alt=""
+                    alt="Book: WMNDFL"
                     class="advice-card-wrapper__img"
                   />
                 </div>
@@ -223,7 +237,7 @@
                   <div class="advice-card-info__subtitle">Business</div>
                   <div class="advice-card-info__price">$23.00</div>
                   <div class="data advice__data">
-                    <button class="button advice__button">Купить</button>
+                    <a href="#" class="button advice__button">Купить</a>
                     <div class="advice-like">
                       <svg class="advice-like__img">
                         <use xlink:href="img/sprite.svg#heart"></use>
@@ -235,9 +249,9 @@
 
               <div class="advice-card">
                 <div class="advice-card-wrapper">
-                  <img
+                  <img loading="lazy"
                     src="img/advice-6.png"
-                    alt=""
+                    alt="Book: Making"
                     class="advice-card-wrapper__img"
                   />
                 </div>
@@ -249,7 +263,7 @@
                   <div class="advice-card-info__subtitle">Motivation</div>
                   <div class="advice-card-info__price">$23.00</div>
                   <div class="data advice__data">
-                    <button class="button advice__button">Купить</button>
+                    <a href="#" class="button advice__button">Купить</a>
                     <div class="advice-like">
                       <svg class="advice-like__img">
                         <use xlink:href="img/sprite.svg#heart"></use>
@@ -268,9 +282,9 @@
             <div class="the-best-wrap">
               <div class="the-best-card">
                 <div class="the-best-card-wrapper">
-                  <img
+                  <img loading="lazy"
                     src="img/the-best-1.png"
-                    alt=""
+                    alt="Book: Sprint"
                     class="the-best-card-wrapper__img"
                   />
                 </div>
@@ -280,15 +294,15 @@
                   </div>
                   <div class="the-best-card-info__price">$23.00</div>
                   <div class="data the-best__data">
-                    <button class="button the-best__button">Купить</button>
+                    <a href="#" class="button the-best__button">Купить</a>
                   </div>
                 </div>
               </div>
               <div class="the-best-card">
                 <div class="the-best-card-wrapper">
-                  <img
+                  <img loading="lazy"
                     src="img/the-best-2.png"
-                    alt=""
+                    alt="Book: Hacking"
                     class="the-best-card-wrapper__img"
                   />
                 </div>
@@ -298,15 +312,15 @@
                   </div>
                   <div class="the-best-card-info__price">$23.00</div>
                   <div class="data the-best__data">
-                    <button class="button the-best__button">Купить</button>
+                    <a href="#" class="button the-best__button">Купить</a>
                   </div>
                 </div>
               </div>
               <div class="the-best-card">
                 <div class="the-best-card-wrapper">
-                  <img
+                  <img loading="lazy"
                     src="img/the-best-3.png"
-                    alt=""
+                    alt="Book: Very Nice"
                     class="the-best-card-wrapper__img"
                   />
                 </div>
@@ -317,15 +331,15 @@
                   </div>
                   <div class="the-best-card-info__price">$23.00</div>
                   <div class="data the-best__data">
-                    <button class="button the-best__button">Купить</button>
+                    <a href="#" class="button the-best__button">Купить</a>
                   </div>
                 </div>
               </div>
               <div class="the-best-card">
                 <div class="the-best-card-wrapper">
-                  <img
+                  <img loading="lazy"
                     src="img/the-best-4.png"
-                    alt=""
+                    alt="Book: Hooked"
                     class="the-best-card-wrapper__img"
                   />
                 </div>
@@ -335,7 +349,7 @@
                   </div>
                   <div class="the-best-card-info__price">$23.00</div>
                   <div class="data the-best__data">
-                    <button class="button the-best__button">Купить</button>
+                    <a href="#" class="button the-best__button">Купить</a>
                   </div>
                 </div>
               </div>
@@ -356,10 +370,10 @@
             <div class="catalog-wrapper owl-carousel owl-theme">
               <div class="catalog-slider__slide item">
                 <div class="catalog-wrapper">
-                  <img
+                  <img loading="lazy"
                     class="catalog-slider__img"
                     src="img/catalog-1.svg"
-                    alt="slide"
+                    alt="slide: Бизнес"
                   />
                 </div>
                 <h2 class="catalog__title">Бизнес & Финансы</h2>
@@ -367,10 +381,10 @@
               </div>
               <div class="catalog-slider__slide item">
                 <div class="catalog-wrapper">
-                  <img
+                  <img loading="lazy"
                     class="catalog-slider__img"
                     src="img/catalog-2.svg"
-                    alt="slide"
+                    alt="slide: Самомотивация"
                   />
                 </div>
                 <h2 class="catalog__title">Самомотивация</h2>
@@ -378,10 +392,10 @@
               </div>
               <div class="catalog-slider__slide item">
                 <div class="catalog-wrapper">
-                  <img
+                  <img loading="lazy"
                     class="catalog-slider__img"
                     src="img/catalog-3.svg"
-                    alt="slide"
+                    alt="slide: Романы"
                   />
                 </div>
                 <h2 class="catalog__title">Романы Теленовеллы</h2>
@@ -389,10 +403,10 @@
               </div>
               <div class="catalog-slider__slide item">
                 <div class="catalog-wrapper">
-                  <img
+                  <img loading="lazy"
                     class="catalog-slider__img"
                     src="img/catalog-4.svg"
-                    alt="slide"
+                    alt="slide: Навыки"
                   />
                 </div>
                 <h2 class="catalog__title">Навыки будущего</h2>
@@ -400,10 +414,10 @@
               </div>
               <div class="catalog-slider__slide item">
                 <div class="catalog-wrapper">
-                  <img
+                  <img loading="lazy"
                     class="catalog-slider__img"
                     src="img/catalog-1.svg"
-                    alt="slide"
+                    alt="slide: Бизнес"
                   />
                 </div>
                 <h2 class="catalog__title">Бизнес & Финансы</h2>
@@ -411,10 +425,10 @@
               </div>
               <div class="catalog-slider__slide item">
                 <div class="catalog-wrapper">
-                  <img
+                  <img loading="lazy"
                     class="catalog-slider__img"
                     src="img/catalog-2.svg"
-                    alt="slide"
+                    alt="slide: Самомотивация"
                   />
                 </div>
                 <h2 class="catalog__title">Самомотивация</h2>
@@ -422,10 +436,10 @@
               </div>
               <div class="catalog-slider__slide item">
                 <div class="catalog-wrapper">
-                  <img
+                  <img loading="lazy"
                     class="catalog-slider__img"
                     src="img/catalog-3.svg"
-                    alt="slide"
+                    alt="slide: Романы"
                   />
                 </div>
                 <h2 class="catalog__title">Романы Теленовеллы</h2>
@@ -433,10 +447,10 @@
               </div>
               <div class="catalog-slider__slide item">
                 <div class="catalog-wrapper">
-                  <img
+                  <img loading="lazy"
                     class="catalog-slider__img"
                     src="img/catalog-4.svg"
-                    alt="slide"
+                    alt="slide: Навыки"
                   />
                 </div>
                 <h2 class="catalog__title">Навыки будущего</h2>
@@ -453,10 +467,10 @@
             <div class="catalog-wrapper owl-carousel owl-theme">
               <div class="catalog-slider__slide item">
                 <div class="catalog-wrapper">
-                  <img
+                  <img loading="lazy"
                     class="catalog-slider__img"
                     src="img/catalog-1.svg"
-                    alt="slide"
+                    alt="slide: Бизнес"
                   />
                 </div>
                 <h2 class="catalog__title">Бизнес & Финансы</h2>
@@ -465,10 +479,10 @@
 
               <div class="catalog-slider__slide catalog-slider__slide_mt item">
                 <div class="catalog-wrapper">
-                  <img
+                  <img loading="lazy"
                     class="catalog-slider__img"
                     src="img/catalog-3.svg"
-                    alt="slide"
+                    alt="slide: Романы"
                   />
                 </div>
                 <h2 class="catalog__title">Романы Теленовеллы</h2>
@@ -476,10 +490,10 @@
               </div>
               <div class="catalog-slider__slide item">
                 <div class="catalog-wrapper">
-                  <img
+                  <img loading="lazy"
                     class="catalog-slider__img"
                     src="img/catalog-2.svg"
-                    alt="slide"
+                    alt="slide: Самомтивация"
                   />
                 </div>
                 <h2 class="catalog__title">Самомотивация</h2>
@@ -489,10 +503,10 @@
               </div>
               <div class="catalog-slider__slide catalog-slider__slide_mt item">
                 <div class="catalog-wrapper">
-                  <img
+                  <img loading="lazy"
                     class="catalog-slider__img"
                     src="img/catalog-4.svg"
-                    alt="slide"
+                    alt="slide: Навыки"
                   />
                 </div>
                 <h2 class="catalog__title">Навыки будущего</h2>
@@ -500,10 +514,10 @@
               </div>
               <div class="catalog-slider__slide item">
                 <div class="catalog-wrapper">
-                  <img
+                  <img loading="lazy"
                     class="catalog-slider__img"
                     src="img/catalog-1.svg"
-                    alt="slide"
+                    alt="slide: Бизнес"
                   />
                 </div>
                 <h2 class="catalog__title">Бизнес & Финансы</h2>
@@ -512,10 +526,10 @@
 
               <div class="catalog-slider__slide catalog-slider__slide_mt item">
                 <div class="catalog-wrapper">
-                  <img
+                  <img loading="lazy"
                     class="catalog-slider__img"
                     src="img/catalog-3.svg"
-                    alt="slide"
+                    alt="slide: Романы"
                   />
                 </div>
                 <h2 class="catalog__title">Романы Теленовеллы</h2>
@@ -523,10 +537,10 @@
               </div>
               <div class="catalog-slider__slide item">
                 <div class="catalog-wrapper">
-                  <img
+                  <img loading="lazy"
                     class="catalog-slider__img"
                     src="img/catalog-2.svg"
-                    alt="slide"
+                    alt="slide: Самомотивация"
                   />
                 </div>
                 <h2 class="catalog__title">Самомотивация</h2>
@@ -536,10 +550,10 @@
               </div>
               <div class="catalog-slider__slide catalog-slider__slide_mt item">
                 <div class="catalog-wrapper">
-                  <img
+                  <img loading="lazy"
                     class="catalog-slider__img"
                     src="img/catalog-4.svg"
-                    alt="slide"
+                    alt="slide: Навыки"
                   />
                 </div>
                 <h2 class="catalog__title">Навыки будущего</h2>
@@ -556,7 +570,7 @@
     <section class="unpublished">
       <div class="container">
         <div class="unpublished-top">
-          <div class="unpublished-top__title">Неизданные книги</div>
+          <h2 class="unpublished-top__title">Неизданные книги</h2>
           <div class="unpublished-top__buttons">
             <div class="unpublished__button unpublished__button_prev">
               <!-- <svg class="icon">
@@ -574,45 +588,45 @@
           <div class="swiper-container unpublished-slider unpublished__slider">
             <div class="swiper-wrapper">
               <div class="swiper-slide unpublished-slider__slide">
-                <img
+                <img loading="lazy"
                   class="unpublished-slider__img"
                   src="img/unpublished-1.png"
-                  alt="slide"
+                  alt="slide: Logo"
                 />
               </div>
               <div class="swiper-slide unpublished-slider__slide">
-                <img
+                <img loading="lazy"
                   class="unpublished-slider__img"
                   src="img/unpublished-2.png"
-                  alt="slide"
+                  alt="slide: Overdue"
                 />
               </div>
               <div class="swiper-slide unpublished-slider__slide">
-                <img
+                <img loading="lazy"
                   class="unpublished-slider__img"
                   src="img/unpublished-3.png"
-                  alt="slide"
+                  alt="slide: Making"
                 />
               </div>
               <div class="swiper-slide unpublished-slider__slide">
-                <img
+                <img loading="lazy"
                   class="unpublished-slider__img"
                   src="img/unpublished-4.png"
-                  alt="slide"
+                  alt="slide: On Web"
                 />
               </div>
               <div class="swiper-slide unpublished-slider__slide">
-                <img
+                <img loading="lazy"
                   class="unpublished-slider__img"
                   src="img/unpublished-5.png"
-                  alt="slide"
+                  alt="slide: After the end"
                 />
               </div>
               <div class="swiper-slide unpublished-slider__slide">
-                <img
+                <img loading="lazy"
                   class="unpublished-slider__img"
                   src="img/unpublished-5.png"
-                  alt="slide"
+                  alt="slide: After the end"
                 />
               </div>
             </div>
@@ -623,7 +637,7 @@
     <section class="history">
       <div class="container history__container">
         <div class="history-top">
-          <div class="history-top__title">История Автора</div>
+          <h2 class="history-top__title">История Автора</h2>
           <div class="history-top__subtitle">
             Это раздел авторского рассказа. Каждую неделю мы стараемся
             рассказать вам историю писателя. Расскажем всем о закулисье их книг.
@@ -642,7 +656,11 @@
         <div class="history-bottom">
           <div class="history-bottom__sect">
             <div class="video history-bottom__video">
-              <img class="history-bottom__img" src="img/history-2.png" alt="" />
+              <img loading="lazy"
+                class="history-bottom__img"
+                src="img/history-2.png"
+                alt="Author: Emelda"
+              />
               <a
                 data-fancybox
                 href="https://www.youtube.com/watch?v=E-ceR_lY0-w"
@@ -682,7 +700,11 @@
           </div>
           <div class="history-bottom__sect">
             <div class="video history-bottom__video">
-              <img class="history-bottom__img" src="img/history-4.png" alt="" />
+              <img loading="lazy"
+                class="history-bottom__img"
+                src="img/history-4.png"
+                alt="Author: Nembo"
+              />
               <a
                 data-fancybox
                 href="https://www.youtube.com/watch?v=zRuaKl_M8RM"
@@ -705,9 +727,9 @@
     </section>
     <section class="cooperation">
       <div class="container">
-        <div class="cooperation__title">
+        <h2 class="cooperation__title">
           Некоторые из издателей, с которыми мы сотрудничали
-        </div>
+        </h2>
         <div class="cooperation__wrapper">
           <div class="cooperation__company">
             <a href="#" class="cooperation__img">
@@ -800,17 +822,21 @@
       <div class="container">
         <!-- <div class="blog-wrap"> -->
         <div class="blog-top">
-          <div class="blog-top__title">Ehya Блог</div>
-          <button class="button blog__button">Все Блоги</button>
+          <h2 class="blog-top__title">Ehya Блог</h2>
+          <a href="#" class="button blog__button">Все Блоги</a>
         </div>
         <div class="blog-middle">
           <div class="blog-middle__first-state">
             <div class="blog-middle__wrap">
-              <img src="img/blog-1.png" alt="" class="blog-middle__img" />
+              <img loading="lazy"
+                src="img/blog-1.png"
+                alt="news: one"
+                class="blog-middle__img"
+              />
             </div>
-            <div class="blog-middle__title">
+            <a href="#" class="blog-middle__title">
               Success Steps For Your Business Life
-            </div>
+            </a>
             <div class="blog-middle__text">
               This is the author story section. Every week we try to give you
               the story of book writer. Tell all of you the behind the scene of
@@ -820,40 +846,52 @@
           <div class="blog-middle__order-state">
             <div class="blog-middle__state">
               <div class="blog-middle__wrapper">
-                <img src="img/blog-2.png" alt="" class="blog-middle__image" />
+                <img loading="lazy"
+                  src="img/blog-2.png"
+                  alt="news: two"
+                  class="blog-middle__image"
+                />
               </div>
               <div class="blog-middle__info">
                 <div class="blog-middle__date">23 МАРТА 2020</div>
-                <div class="blog-middle__order-title">
+                <a href="#" class="blog-middle__order-title">
                   29 Motivational Quotes<br />
                   for Work Environments
-                </div>
+                </a>
                 <a href="#" class="blog-middle__read">ЧИТАТЬ</a>
               </div>
             </div>
             <div class="blog-middle__state">
               <div class="blog-middle__wrapper">
-                <img src="img/blog-3.png" alt="" class="blog-middle__image" />
+                <img loading="lazy"
+                  src="img/blog-3.png"
+                  alt="news: three"
+                  class="blog-middle__image"
+                />
               </div>
               <div class="blog-middle__info">
                 <div class="blog-middle__date">28 МАРТА 2020</div>
-                <div class="blog-middle__order-title">
+                <a href="#" class="blog-middle__order-title">
                   Learn To Love Growth<br />
                   and You Will Be A Success
-                </div>
+                </a>
                 <a href="#" class="blog-middle__read">ЧИТАТЬ</a>
               </div>
             </div>
             <div class="blog-middle__state">
               <div class="blog-middle__wrapper">
-                <img src="img/blog-4.png" alt="" class="blog-middle__image" />
+                <img loading="lazy"
+                  src="img/blog-4.png"
+                  alt="news: four"
+                  class="blog-middle__image"
+                />
               </div>
               <div class="blog-middle__info">
                 <div class="blog-middle__date">28 МАРТА 2020</div>
-                <div class="blog-middle__order-title">
+                <a href="#" class="blog-middle__order-title">
                   Motivation How To Build<br />
                   Trust at your Work
-                </div>
+                </a>
                 <a href="#" class="blog-middle__read">ЧИТАТЬ</a>
               </div>
             </div>
@@ -903,22 +941,22 @@
               креативный веб-сайт с crealand
             </div>
             <div class="footer__social-network">
-              <a href="index.html" class="footer__link">
+              <a href="#" class="footer__link">
                 <svg class="footer__icon">
                   <use xlink:href="img/sprite.svg#google"></use>
                 </svg>
               </a>
-              <a href="index.html" class="footer__link">
+              <a href="#" class="footer__link">
                 <svg class="footer__icon">
                   <use xlink:href="img/sprite.svg#twiter"></use>
                 </svg>
               </a>
-              <a href="index.html" class="footer__link">
+              <a href="#" class="footer__link">
                 <svg class="footer__icon">
                   <use xlink:href="img/sprite.svg#instagram"></use>
                 </svg>
               </a>
-              <a href="index.html" class="footer__link">
+              <a href="#" class="footer__link">
                 <svg class="footer__icon">
                   <use xlink:href="img/sprite.svg#in"></use>
                 </svg>
@@ -1013,14 +1051,68 @@
         </div>
       </div>
     </section>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/swiper-bundle.min.js"></script>
+
+    <div class="modal info-modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="img/close.svg" alt="Icon: close" />
+        </a>
+        <h3 class="modal__title">Получить</h3>
+        <form action="send.php" method="POST" class="modal__form form">
+          <div class="modal__input-group">
+            <input
+              type="text"
+              class="input modal__input"
+              placeholder="Ваше имя*"
+              name="name"
+              minlength="2"
+              required
+            />
+          </div>
+          <div class="modal__input-group">
+            <input
+              type="tel"
+              class="input modal__input phone"
+              placeholder="Ввведите номер*"
+              name="phone"
+              minlength="18"
+              required
+            />
+          </div>
+          <div class="modal__input-group">
+            <input
+              type="email"
+              class="input modal__input"
+              placeholder="Введите email*"
+              name="emailstwo"
+              required
+            />
+          </div>
+          <!-- <textarea
+            class="message modal__message"
+            placeholder="Сообщение"
+            name="message"
+          ></textarea> -->
+          <div class="modal__block">
+            <button class="button modal__button">Отправить</button>
+            <span class="modal__info">* Обязательное поле</span>
+          </div>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <script defer src="js/jquery-3.6.0.min.js"></script>
+    <script defer src="js/swiper-bundle.min.js"></script>
     <!-- <script src="js/slick.js"></script> -->
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/owl2row.js"></script>
-    <script src="js/jquery.fancybox.min.js"></script>
-    <script src="js/jquery.mask.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/main.js"></script>
+    <script defer src="js/owl.carousel.min.js"></script>
+    <script defer src="js/owl2row.js"></script>
+    <script defer src="js/jquery.fancybox.min.js"></script>
+    <script defer src="js/jquery.mask.min.js"></script>
+    <script defer src="js/jquery.validate.min.js"></script>
+    <script defer src="js/main.js"></script>
   </body>
 </html>
