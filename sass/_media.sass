@@ -6,7 +6,87 @@
             &__slide
                 max-width: 460px
                 width: 100%
-            
+    .book
+        margin-top: 30px
+        &__text
+            max-width: 500px
+    .board
+        margin-top: 100px
+        margin-bottom: 50px
+        &-wrap
+            flex-direction: column
+    .advice
+        max-width: 960px
+        &-card
+            max-width: 465px
+            width: 465px
+            &-info
+                min-width: 290px
+    .blog
+        padding-top: 50px
+        &-middle
+            &__wrap
+                width: 470px
+            &__first-state
+                // margin-right: 0
+            &__wrapper
+                width: 220px
+                min-width: 220px
+            &__date
+                font-size: 12px
+            &__read
+                font-size: 14px
+            &__order-title
+                font-size: 16px
+            &__text
+                max-width: 460px
+    .footer
+        &__main
+            margin-right: 20px
+        &__list
+            margin-right: 5px
+        &-wrap
+            padding-top: 100px
+    .cooperation
+        padding-top: 50px
+        padding-bottom: 50px
+        &__img
+            width: 290px
+            display: flex
+            justify-content: center
+    .the-best
+        max-width: 960px
+        margin-top: 40px
+        &__best-books
+            min-width: 960px
+        &-wrap
+            flex-direction: row
+            flex-wrap: wrap
+        &-card
+            width: 479px
+    .history
+        margin-top: 50px
+        margin-bottom: 50px
+        &-medium
+            margin-bottom: -85px
+        &-bottom
+            &__video
+                max-width: 306px
+    .owl-next
+        position: relative
+        z-index: -10
+        left: -30px
+        &::after
+            left: 25px
+            top: -11px
+    .subscription
+        &__title
+            font-size: 32px
+    .owl-nav
+        right: 40px
+    .unpublished
+        padding-top: 50px
+        padding-bottom: 50px
 @media (max-width: 992px)
     .container
         max-width: 700px
@@ -22,13 +102,80 @@
             align-items: center
         &-title
             text-align: center
+            margin-top: 0
         &-image
             margin-top: 36px
+        &__text
+            text-align: center
     .button
         &-wrapper
             display: flex
             justify-content: center
-    
+    .blog
+        &-middle
+            flex-direction: column
+            align-items: center
+            &__first-state
+                margin-bottom: 25px
+    .footer
+        &-wrap
+            flex-direction: column
+    .the-best
+        &__best-books
+            min-width: 700px
+        &-card
+            width: 348px
+    .owl-nav
+        right: 30px
+    .owl-next:after
+        left: 17px
+    .advice-card
+        max-width: 340px
+        width: 340px
+        &-info
+            min-width: 172px
+    .history
+        &-bottom
+            &__sect
+                &:nth-child(3)
+                    display: none
+            &__video
+                max-width: 340px
+                width: 340px
+                &-3
+                    max-width: 340px
+                    width: 340px
+            &__icon
+                left: 155px
+        &-medium
+            &__video
+                background-position: center center
+                background-repeat: no-repeat
+                background-size: 700px
+            &::after
+                left: 299px
+            &__icon
+                left: 337px
+    .subscription
+        &-wrap
+            flex-direction: column
+        &__title
+            margin-left: -103px
+    .advice
+        &-like
+            &__img
+                margin-top: 6px
+                margin-right: 3px
+    .cooperation
+        &__img
+            width: 220px
+    .footer
+        &__main
+            margin-bottom: 25px
+        &__list
+            min-width: 170px
+        // &__navigation
+        //     flex-wrap: wrap
 @media (max-width: 767px)
     .container
         max-width: 576px
@@ -90,6 +237,64 @@
             width: 22px
             height: 2px
             background-color: $four
+    .history
+        &-bottom
+            &__video
+                max-width: 250px
+                width: 250px
+                margin-top: 21px
+                height: 159px
+                &-3
+                    max-width: 250px
+                    width: 250px
+                    margin-bottom: -23px
+    .footer
+        &__navigation
+            flex-wrap: wrap
+        &__list
+            min-width: 200px
+    .the-best
+        &__best-books
+            min-width: 535px
+            width: 90%
+    .catalog
+        &-slider
+            &__slide
+                max-width: 250px
+    .history
+        &-top
+            flex-direction: column
+            align-items: center
+            margin-right: 0
+            &__subtitle
+                text-align: left
+    .advice
+        &-card
+            max-width: 550px
+            width: 90%
+            &-info
+                max-width: 350px
+                width: 100%
+    .history
+        &-medium
+            &::after
+                left: 50%
+                transform: translateX(-50%)
+            &__icon
+                left: 48%
+                transform: translateY(-48%)
+        &-bottom
+            &__icon
+                left: 45%
+    .book
+        &-title
+            margin-top: 44px
+    .board
+        margin-top: 50px
+    // .unpublished
+    //     &-slider
+    //         &__img
+    //             max-width: 170px
     // .book
     //     &-image
     //         &__img
@@ -108,10 +313,93 @@
     //     z-index: -11
     //     &__slider
     //         z-index: -10
+
 @media (max-width: 576px)
     .container
         max-width: 480px
         width: 92%
+    .the-best
+        &__best-books
+            min-width: 440px
+    .history
+        &-bottom
+            &__subtitle
+                font-size: 14px
+            &__title
+                font-size: 18px
+            &__video
+                max-width: 200px
+                width: 200px
+                margin-top: 21px
+                height: 159px
+                &-3
+                    max-width: 200px
+                    width: 200px
+                    margin-bottom: -23px
+                    background-size: 250px
+    .book
+        &-image
+            width: 430px
+    .subscription
+        &__title
+            font-size: 30px
+            margin-left: -80px
+
+    .subscribe
+        margin-left: 45px
+        &__input
+            width: 380px
+        &__button
+            right: 70px
+    .blog
+        &-middle
+            &__wrap
+                width: 400px
+    .catalog
+        margin-bottom: 40px
+        &__title
+            font-size: 18px
+        &__subtitle
+            font-size: 14px
+    .history
+        margin-top: 50px
+        margin-bottom: 50px
+        &-medium
+            &::after
+                left: 51%
+                transform: translateX(-51%)
+    .button
+        &-wrapper
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+    .book
+        &__text
+            margin-bottom: 30px
+        &__button
+            // font-size: 16px
+            // line-height: 22px
+            // width: 176px
+            &_left
+                padding: 9px 20px
+            &_right
+                margin-top: 15px
+                margin-left: 0
+                padding: 7px 27px
+                font-size: 16px
+                line-height: 22px
+    .board
+        margin-top: 50px
+        margin-bottom: 50px
+    .cooperation
+        padding-top: 50px
+        padding-bottom: 50px
+    .blog
+        padding-top: 50px
+        padding-bottom: 0
+    .footer
+        &-wrap
+            padding-top: 50px
 @media (max-width: 480px)
     .container, .navbar__container
         max-width: 280px
@@ -227,6 +515,7 @@
                     margin-left: -9px
         &__data
             margin-top: 20px
+            margin-left: -12px
         &__button
             margin-left: 14px
             padding: 7px 27px
@@ -253,8 +542,9 @@
             left: -66px
         &__best-books
             margin-top: 58px
+            min-width: 280px
         &__title
-            margin-top: 57px
+            margin-top: 17px
         &__button
             font-family: Open Sans
             font-style: normal
@@ -330,7 +620,7 @@
     // .slick-slide>div 
     //     padding: 0 10px
     .catalog
-        margin-bottom: 105px
+        margin-bottom: 123px
         &__slider
             &_mobile
                 &-visible
@@ -375,6 +665,7 @@
                 margin-top: 18px
     .owl-stage
         display: flex
+
     .catalog-slider__slide:nth-child(2)
         order: -1
     .catalog-slider__img
@@ -384,10 +675,13 @@
         &::after
             width: 48px
             height: 48px
+            left: -102px
+            top: -2px
     .owl-nav
         top: 99%
     .unpublished
-        padding-bottom: 118px
+        padding-bottom: 132px
+        padding-top: 61px
         &-top
             position: relative
             justify-content: center
@@ -451,8 +745,8 @@
                 margin-top: 23px
         &-medium
             &::after
-                left: 122px
-                top: -132px
+                left: 150px
+                top: -133px
                 width: 56px
                 height: 56px
             &__video
@@ -470,7 +764,7 @@
                 height: 22px
                 top: 51%
         &-bottom
-            margin-top: 34px
+            margin-top: 28px
             &__info
                 flex-direction: column
                 margin-top: 16px
@@ -492,6 +786,8 @@
                     max-width: 140px
                     width: 140px
                     height: 138px
+                    margin-top: 21px
+                    margin-bottom: -1px
                     background-position: center center
                     background-size: 227px
                     background-image: url(../img/history-3b.png)
@@ -511,19 +807,33 @@
                 font-size: 12px
                 line-height: 20px
                 text-align: center
+                margin-top: 8px
     .cooperation
         padding-top: 34px
-        padding-bottom: 45px
+        padding-bottom: 47px
+        &__img
+            width: 106px
         &__title
             max-width: 270px
             margin-left: 3px
+            font-family: Roboto Condensed
+            font-style: normal
+            font-weight: bold
+            font-size: 24px
+            line-height: 30px
+            text-align: center
+            letter-spacing: 0.2px
         &__wrapper
             display: flex
             justify-content: space-between
             max-width: 215px
             margin: auto
+            max-height: 172px
         &__company
-            margin-top: 26px  
+            margin-top: 26px
+            // &:nth-child(7,8,9,10,11,12)
+            //     display: none
+                  
         &-icon, &_9
             width: 98px
             height: 28px
@@ -533,28 +843,31 @@
             margin-left: 0
             margin-right: 0
             position: relative
-            left: -3px
+            left: -8px
+            top: 3px
             &_2, &_7
                 width: 86px
                 height: 22px
                 margin-left: 0
                 margin-right: 0
-                left: 0px
+                left: 7px
+                top: 6px
             &_3, &_11
                 width: 86px
                 height: 22px
                 margin-left: 0
                 margin-right: 0
                 position: relative
-                top: -5px
-                left: 3px
+                top: 0px
+                left: -9px
             &_4, &_12
                 width: 86px
                 height: 28px
                 margin-left: 0
                 margin-right: 0
                 position: relative
-                top: -5px
+                top: -2px
+                left: 8px
             &_5, &_8
                 width: 86px
                 height: 26px
@@ -562,15 +875,15 @@
                 margin-right: 0
                 position: relative
                 top: -9px
-                left: 2px
+                left: -9px
             &_6, &_10
                 width: 86px
                 height: 18px
-                margin-left: 42px
+                margin-left: 17px
                 margin-top: -10px
                 margin-right: 0
                 position: relative
-                top: -8px
+                top: 5px
                 left: 1px
             &_7
                 display: none
@@ -626,6 +939,8 @@
             &__first-state
                 flex-direction: column
                 align-items: center
+                margin-right: -1px
+                margin-bottom: 0
             &__title
                 font-family: Roboto Condensed
                 font-style: normal
@@ -679,7 +994,8 @@
                 height: 90px
     .subscription
         background-color: $second
-        padding-bottom: 28px
+        padding-bottom: 30px
+        margin-top: 98px
         &__title
             font-family: Roboto Condensed
             font-style: normal
@@ -687,6 +1003,7 @@
             font-size: 28px
             line-height: 36px
             letter-spacing: 0.2px
+            margin-left: 0
         &-wrap
             flex-direction: column
             background-color: $second
@@ -697,6 +1014,7 @@
             margin-top: 31px
     .subscribe
         min-width: 100%
+        margin-left: 0
         &__input
             width: 272px
             padding-top: 28px
@@ -706,13 +1024,14 @@
             &-group
                 margin-left: 59px
         &__button
-            top: 55px
+            top: 57px
             right: 12px
             padding: 20px 70px
         &__icon
             left: 79px
             top: 20px
     .footer
+        padding-bottom: 0
         &__item
             padding-bottom: 13px
         &__ref
@@ -771,6 +1090,7 @@
             margin-left: 25px
             margin-top: 5px
             padding-bottom: 64px
+            margin-bottom: 0
         &__subtitle
             max-width: 280px
             text-align: center
