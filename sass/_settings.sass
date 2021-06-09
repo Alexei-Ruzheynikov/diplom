@@ -6,6 +6,8 @@ body
     font-family: 'Open Sans', sans-serif
     background-color: $light
     overflow-x: hidden
+    overflow-y: hidden
+
 .container
     max-width: 1140px
     margin: auto
@@ -35,3 +37,33 @@ h2
     position: fixed
     width: 100%
     height: 100vh
+
+[name=name]::-moz-placeholder, [name=phone]::-moz-placeholder,[type=email]::-moz-placeholder, textarea::-moz-placeholder
+    padding-top: 14px
+
+// .circle__left
+//     position: relative
+//     &::after
+//         content: ""
+//         position: absolute
+//         top: -927px
+//         left: -176px
+//         display: block
+//         width: 1186px
+//         height: 1186px
+//         border-radius: 593px
+//         // background-color: green
+//         background: linear-gradient(270deg, rgba(255, 0, 0, 0.2) 0%, #FFFFFF 99.73%)
+//         z-index: 14
+//     &::before
+//         position: absolute
+//         content: ""
+//         top: -730px
+//         left: 22px
+//         display: block
+//         width: 786px
+//         height: 786px
+//         border-radius: 593px
+//         background-color: transparent
+//         // background-color: $second
+//         z-index: 15

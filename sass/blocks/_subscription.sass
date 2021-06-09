@@ -1,6 +1,9 @@
 .subscription
-    margin-top: 50px
-    
+    padding-top: 50px
+    // position: relative
+    // z-index: 11
+    &__circle_left
+        
     &__title
         font-family: Roboto Condensed
         font-style: normal
@@ -11,6 +14,32 @@
         color: $light
         max-width: 393px
         margin: 0 
+        position: relative
+        &::after
+            content: ""
+            position: absolute
+            top: -1039px
+            left: -615px
+            display: block
+            width: 1186px
+            height: 1186px
+            border-radius: 593px
+            // background-color: green
+            background: linear-gradient(270deg, rgba(255, 255, 255, 0.0001) 0%, #FFFFFF 99.73%)
+            opacity: 0.2
+            z-index: -11
+        &::before
+            position: absolute
+            content: ""
+            top: -839px
+            left: -428px
+            display: block
+            width: 786px
+            height: 786px
+            border-radius: 593px
+            // background-color: green
+            background-color: $second
+            z-index: -10
     &-wrap
         background-color: $second
         border-radius: 12px
@@ -21,12 +50,42 @@
         display: flex
         justify-content: space-between
         align-items: center
+        position: relative
+        overflow: hidden
+        z-index: 4
+        &::after
+            content: ""
+            position: absolute
+            top: -60px
+            left: 486px
+            display: block
+            width: 1186px
+            height: 1186px
+            border-radius: 593px
+            // background-color: green
+            background: linear-gradient(270deg, #FFFFFF 28.21%, rgba(255, 255, 255, 0.0001) 99.73%)
+            opacity: 0.2
+            z-index: 1
+        &::before
+            position: absolute
+            content: ""
+            top: 140px
+            left: 684px
+            display: block
+            width: 786px
+            height: 786px
+            border-radius: 593px
+            // background-color: green
+            background-color: $second
+            z-index: 2
+            
     &__subscribe
         margin-top: 21px
 .subscribe
     min-width: 447px
     height: 56px
     position: relative
+    z-index: 2388
     &__icon
         width: 16px
         height: 18px
@@ -36,11 +95,15 @@
     &__input
         display: block
         width: 447px
-        height: 54px
+        // height: 54px
         border: 1px solid #C3CAD9
         border-radius: 8px
         padding-left: 47px
         padding-right: 193px
+        padding-top: 17px
+        padding-bottom: 17px
+        max-height: 54px
+        // -moz-padding-top: 14px
         &[type=email]::placeholder
             font-family: Open Sans
             font-style: normal
