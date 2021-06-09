@@ -150,8 +150,53 @@ $(document).ready(function () {
   var modalButton = $("[data-toggle=modal]");
   var closemodalButton = $(".modal__close");
   modalButton.on("click", openModal);
-  closemodalButton.on("click", closeModal);
 
+  closemodalButton.on("click", closeModal);
+  var closemodalClick = $(".modal__overlay");
+  closemodalClick.on("click", closeModal);
+  // var hiddenScroll = $("[data-toggle=modal]");
+  // hiddenScroll.on("body").addClass(".modal-open");
+  // modalButton.on("click", $("body").toggleClass("lock"));
+  $("[data-toggle=modal]").click(function () {
+    $("body").addClass("lock");
+    return false;
+  });
+  $(".modal__close").click(function () {
+    $("body").toggleClass("lock");
+    return false;
+  });
+  $(".modal__overlay").click(function () {
+    $("body").toggleClass("lock");
+    return false;
+  });
+  // $(".navbar__button").click(function () {
+  //   $("body").toggleClass("lock");
+  //   return false;
+  // });
+  $("#advice-1").click(function () {
+    $("#advice-1").toggleClass("advice-like__img_red");
+    return false;
+  });
+  $("#advice-2").click(function () {
+    $("#advice-2").toggleClass("advice-like__img_red");
+    return false;
+  });
+  $("#advice-3").click(function () {
+    $("#advice-3").toggleClass("advice-like__img_red");
+    return false;
+  });
+  $("#advice-4").click(function () {
+    $("#advice-4").toggleClass("advice-like__img_red");
+    return false;
+  });
+  $("#advice-5").click(function () {
+    $("#advice-5").toggleClass("advice-like__img_red");
+    return false;
+  });
+  $("#advice-6").click(function () {
+    $("#advice-6").toggleClass("advice-like__img_red");
+    return false;
+  });
   function openModal() {
     var targetModal = $(this).attr("data-href");
     $(targetModal).find(".modal__overlay").addClass("modal__overlay--visible");
@@ -165,6 +210,14 @@ $(document).ready(function () {
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
   }
+
+  $(".modal")
+    .on("shown", function () {
+      $("body").css("overflow", "hidden");
+    })
+    .on("hidden", function () {
+      $("body").css("overflow", "auto");
+    });
 
   // Обработка форм
   $(".form").each(function () {

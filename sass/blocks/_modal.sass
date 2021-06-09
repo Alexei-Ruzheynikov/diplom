@@ -17,7 +17,8 @@
         position: fixed
         top: 50%
         left: 50%
-        max-width: 478px
+        width: 478px
+        // max-height: 370px
         padding: 33px 88px
         background-color: $first
         transform: translate(-50%, -50%)
@@ -45,9 +46,11 @@
         text-transform: uppercase
         text-align: center
         margin-top: 1px
+        margin-bottom: 15px
     &__input
-        width: 100%
-        min-width: 240px
+        width: 300px
+        max-width: 300px
+        
         background-color: #fff
         border-radius: 4px
         border: none
@@ -55,7 +58,7 @@
         height: 50px
         &-group
             width: 100%
-            margin-top: 15px
+            min-height: 80px
        
     &__message
         width: 100%
@@ -69,7 +72,6 @@
         height: 123px
         resize: none
     &__button
-        margin-top: 15px   
         min-width: 140px
         min-height: 50px
         &:hover

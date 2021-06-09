@@ -67,7 +67,7 @@
         &__link
             &::after
                 width: 958px
-                left: -424px
+                left: 0px
     .history
         margin-top: 50px
         margin-bottom: 50px
@@ -91,6 +91,10 @@
     .unpublished
         padding-top: 50px
         padding-bottom: 50px
+    .modal__dialog
+        width: 398px
+        padding-left: 50px
+        padding-right: 50px
 @media (max-width: 992px)
     .container
         max-width: 700px
@@ -132,7 +136,7 @@
         &__link
             &::after
                 width: 689px
-                left: -290px
+                left: 7px
     .owl-nav
         right: 30px
     .owl-next:after
@@ -188,6 +192,56 @@
             padding: 20px 35px
         // &__navigation
         //     flex-wrap: wrap
+    .info
+        &-menu
+            &__link
+                &:hover
+                    color: $first
+        &__button, &-menu__button
+            &:hover
+                    color: $second
+    .book
+        &__button
+            &:hover
+                color: $light
+            &_right
+                &:hover
+                    color: $second
+    .advice
+        &__button
+            &:hover
+                color: $light
+        &__link
+            &:hover
+                color: $second
+    .the-best
+        &__button
+            &:hover
+                color: $light
+        &__link
+            &:hover
+                color: $second
+    .blog
+        &__button
+            &:hover
+                color: $second
+        &-middle
+            &__read
+                &:hover
+                    color: $second
+    .subscribe
+        &__button
+            &:hover
+                background-color: #FAAD13
+    .footer
+        &__ref
+            &:hover
+                color: $first
+        &__icon
+            &:hover
+                fill: $third
+    .modal__dialog
+        width: 368px
 @media (max-width: 767px)
     .container
         max-width: 576px
@@ -272,7 +326,7 @@
         &__link
             &::after
                 width: 537px
-                left: -210px
+                left: 0px
     .catalog
         &-slider
             &__slide
@@ -322,29 +376,13 @@
         padding-bottom: 55px
     .modal__close
         top: 30px
-    // .unpublished
-    //     &-slider
-    //         &__img
-    //             max-width: 170px
-    // .book
-    //     &-image
-    //         &__img
-    //             z-index: -10
-    // .the-best
-    //     &__link
-    //         z-index: -10
-    // .catalog
-    //     &-wrap
-    //         &::after
-    //             z-index: -10
-    //     &-wrapper
-    //         z-index: -10
-    // .unpublished
-    //     position: relative
-    //     z-index: -11
-    //     &__slider
-    //         z-index: -10
-
+    .modal__info
+        margin-bottom: 12px
+        margin-top: 0
+    .info-menu
+        &_mobile-visible
+            overflow-y: auto
+            max-height: 100vh
 @media (max-width: 576px)
     .container
         max-width: 480px
@@ -355,7 +393,7 @@
         &__link
             &::after
                 width: 438px
-                left: -163px
+                left: 2px
     .history
         &-bottom
             &__subtitle
@@ -437,6 +475,8 @@
             padding-top: 50px
     .modal__input
         height: 40px
+    .modal__input-group
+        min-height: 67px
 @media (max-width: 480px)
     .container, .navbar__container
         max-width: 280px
@@ -486,7 +526,7 @@
             justify-content: space-between
     .board
         margin-top: 57px
-        margin-bottom: 84px
+        margin-bottom: 87px
         &-wrap
             flex-direction: column
     .advice
@@ -558,10 +598,10 @@
             padding: 7px 27px
         &-like
             margin-left: 20px
-        &__more-books
-            margin-top: 24px
-            padding-top: 16px
-            padding-bottom: 12px
+        // &__more-books
+            // margin-top: 24px
+            // padding-top: 16px
+            // padding-bottom: 12px
         &__link
             font-family: Roboto Condensed
             font-style: normal
@@ -572,13 +612,17 @@
             letter-spacing: 0.2px
             text-transform: none
             margin-top: -2px
+            padding-top: 13px
+            padding-bottom: 14px
     .the-best
+        &__link
+            padding-bottom: 20px
         &__link::after
             width: 242px
-            top: -21px
-            left: -66px
+            top: 8px
+            left: 15px
         &__best-books
-            margin-top: 58px
+            margin-top: 28px
             min-width: 280px
         &__title
             margin-top: 17px
@@ -1144,4 +1188,9 @@
             line-height: 30px
         &__button
             max-width: 250px
-    
+    .modal
+        &__dialog
+            width: 280px
+        &__input
+            max-width: 245px
+            width: 245px
