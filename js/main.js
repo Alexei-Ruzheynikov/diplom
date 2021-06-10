@@ -1,6 +1,44 @@
 $(document).ready(function () {
+  $(".navbar .navbar__container .navbar-wrap ul li a").click(function () {
+    var element = $(this).attr("href");
+    var dist = $(element).offset().top;
+    $("html, body").animate({ scrollTop: dist }, 1000);
+    return false;
+  });
+
+  $(window).scroll(function () {
+    if ($(this).scrollTop() != 0) {
+      $("#toTop").fadeIn();
+    } else {
+      $("#toTop").fadeOut();
+    }
+  });
+
+  $("#toTop").click(function () {
+    $("body,html").animate({ scrollTop: 0 }, 800);
+  });
+
+  $(window).scroll(function () {
+    $("section[id]").each(function () {
+      var id = $(this).attr("id");
+      if ($(this).offset().top - 121 < $(window).scrollTop()) {
+        $(".navbar .navbar__container .navbar-wrap ul li a").removeClass(
+          "active"
+        );
+        $(
+          '.header .navbar__container .navbar-wrap ul li a[href="#' + id + '"]'
+        ).addClass("active");
+      }
+    });
+  });
+
   var menuButton = $(".navbar__button");
   menuButton.on("click", function () {
+    $(".info-menu_mobile").toggleClass("info-menu_mobile-visible");
+  });
+
+  var menuButtonLink = $(".info-menu__link");
+  menuButtonLink.on("click", function () {
     $(".info-menu_mobile").toggleClass("info-menu_mobile-visible");
   });
 
@@ -127,7 +165,7 @@ $(document).ready(function () {
         spaceBetween: 10,
       },
       576: {
-        slidesPerView: 3,
+        slidesPerView: 2,
         spaceBetween: 25,
       },
       768: {
@@ -150,7 +188,6 @@ $(document).ready(function () {
   var modalButton = $("[data-toggle=modal]");
   var closemodalButton = $(".modal__close");
   modalButton.on("click", openModal);
-
   closemodalButton.on("click", closeModal);
   var closemodalClick = $(".modal__overlay");
   closemodalClick.on("click", closeModal);
@@ -161,6 +198,10 @@ $(document).ready(function () {
     $("body").addClass("lock");
     return false;
   });
+  // $(".info-menu_mobile").click(function () {
+  //   $("info-menu_mobile").toggleClass("info-menu_mobile-visible");
+  //   return false;
+  // });
   $(".modal__close").click(function () {
     $("body").toggleClass("lock");
     return false;
@@ -169,6 +210,14 @@ $(document).ready(function () {
     $("body").toggleClass("lock");
     return false;
   });
+  // $(".history-medium__icon").click(function () {
+  //   $("body").addClass("lock");
+  //   return false;
+  // });
+  // $(".history-bottom__icon").click(function () {
+  //   $("body").addClass("lock");
+  //   return false;
+  // });
   // $(".navbar__button").click(function () {
   //   $("body").toggleClass("lock");
   //   return false;

@@ -30,13 +30,13 @@
           <div class="info navbar__info">
             <ul class="info-menu">
               <li class="info-menu__item info-menu__item_mobile-hidden">
-                <a href="#" class="info-menu__link">Рекомендации</a>
+                <a href="#id1" class="info-menu__link">Рекомендации</a>
               </li>
               <li class="info-menu__item info-menu__item_mobile-hidden">
-                <a href="#" class="info-menu__link">Книги</a>
+                <a href="#id2" class="info-menu__link">Книги</a>
               </li>
               <li class="info-menu__item info-menu__item_mobile-hidden">
-                <a href="#" class="info-menu__link">Блог</a>
+                <a href="#id3" class="info-menu__link">Блог</a>
               </li>
             </ul>
             <button
@@ -53,13 +53,13 @@
             </button>
             <ul class="info-menu info-menu_mobile">
               <li class="info-menu__item info-menu__item_mobile-visible">
-                <a href="#" class="info-menu__link">Рекомендации</a>
+                <a href="#id4" class="info-menu__link">Рекомендации</a>
               </li>
               <li class="info-menu__item info-menu__item_mobile-visible">
-                <a href="#" class="info-menu__link">Книги</a>
+                <a href="#id5" class="info-menu__link">Книги</a>
               </li>
               <li class="info-menu__item info-menu__item_mobile-visible">
-                <a href="#" class="info-menu__link">Блог</a>
+                <a href="#id6" class="info-menu__link">Блог</a>
               </li>
               <li class="info-menu__item info-menu__item_mobile-visible">
                 <button
@@ -116,7 +116,8 @@
         </div>
       </div>
     </section>
-    <section class="board">
+    <section class="board" id="id1">
+      <div id="id4"></div>
       <div class="container">
         <div class="board-wrap">
           <div class="advice">
@@ -594,7 +595,8 @@
       <!-- </div>
       </div> -->
     </section>
-    <section class="unpublished">
+    <section class="unpublished" id="id2">
+      <div id="id5"></div>
       <div class="container">
         <div class="unpublished-top">
           <h2 class="unpublished-top__title">Неизданные книги</h2>
@@ -688,10 +690,15 @@
             рассказать вам историю писателя. Расскажем всем о закулисье их книг.
           </div>
         </div>
+
         <div class="history-medium">
           <div class="video history-medium__video">
             <!-- <img class="history-medium__img" src="img/history-1c.png" alt="" /> -->
-            <a data-fancybox href="https://www.youtube.com/watch?v=wInZ_WzVOvU">
+            <a
+              data-fancybox
+              href="https://www.youtube.com/watch?v=wInZ_WzVOvU"
+              class="history-medium__link"
+            >
               <svg class="history-medium__icon">
                 <use xlink:href="img/sprite.svg#play"></use>
               </svg>
@@ -865,7 +872,8 @@
         </div>
       </div>
     </section>
-    <section class="blog">
+    <section class="blog" id="id3">
+      <div id="id6"></div>
       <div class="container">
         <!-- <div class="blog-wrap"> -->
         <div class="blog-top">
@@ -952,8 +960,8 @@
       </div>
     </section>
     <section class="subscription">
-      <div class="subscription__circle_left"></div>
-      <div class="subscription__circle_right"></div>
+      <div class="subscription__circle subscription__circle_left"></div>
+      <div class="subscription__circle subscription__circle_right"></div>
 
       <div class="container">
         <div class="subscription-wrap">
@@ -1174,7 +1182,11 @@
       <!-- /.modal__dialog -->
     </div>
     <!-- /.modal -->
-
+    <div id="toTop">
+      <svg class="to-top">
+        <use xlink:href="img/sprite.svg#icon-top"></use>
+      </svg>
+    </div>
     <!-- <div class="circle">
       <div class="circle__left"></div>
       <div class="circle__right"></div>

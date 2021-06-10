@@ -30,13 +30,15 @@
           <div class="info navbar__info">
             <ul class="info-menu">
               <li class="info-menu__item info-menu__item_mobile-hidden">
-                <a href="#" class="info-menu__link">Рекомендации</a>
+                <a href="index.html#id1" class="info-menu__link"
+                  >Рекомендации</a
+                >
               </li>
               <li class="info-menu__item info-menu__item_mobile-hidden">
-                <a href="#" class="info-menu__link">Книги</a>
+                <a href="index.html#id2" class="info-menu__link">Книги</a>
               </li>
               <li class="info-menu__item info-menu__item_mobile-hidden">
-                <a href="#" class="info-menu__link">Блог</a>
+                <a href="index.html#id3" class="info-menu__link">Блог</a>
               </li>
             </ul>
             <button
@@ -53,13 +55,15 @@
             </button>
             <ul class="info-menu info-menu_mobile">
               <li class="info-menu__item info-menu__item_mobile-visible">
-                <a href="#" class="info-menu__link">Рекомендации</a>
+                <a href="index.html#id4" class="info-menu__link"
+                  >Рекомендации</a
+                >
               </li>
               <li class="info-menu__item info-menu__item_mobile-visible">
-                <a href="#" class="info-menu__link">Книги</a>
+                <a href="index.html#id5" class="info-menu__link">Книги</a>
               </li>
               <li class="info-menu__item info-menu__item_mobile-visible">
-                <a href="#" class="info-menu__link">Блог</a>
+                <a href="index.html#id6" class="info-menu__link">Блог</a>
               </li>
               <li class="info-menu__item info-menu__item_mobile-visible">
                 <button
@@ -101,22 +105,38 @@
               креативный веб-сайт с crealand
             </div>
             <div class="footer__social-network">
-              <a href="index.html" class="footer__link">
+              <a
+                target="_blank"
+                href="https://mail.google.com"
+                class="footer__link"
+              >
                 <svg class="footer__icon">
                   <use xlink:href="img/sprite.svg#google"></use>
                 </svg>
               </a>
-              <a href="index.html" class="footer__link">
+              <a
+                target="_blank"
+                href="https://twitter.com"
+                class="footer__link"
+              >
                 <svg class="footer__icon">
                   <use xlink:href="img/sprite.svg#twiter"></use>
                 </svg>
               </a>
-              <a href="index.html" class="footer__link">
+              <a
+                target="_blank"
+                href="https://www.instagram.com/"
+                class="footer__link"
+              >
                 <svg class="footer__icon">
                   <use xlink:href="img/sprite.svg#instagram"></use>
                 </svg>
               </a>
-              <a href="index.html" class="footer__link">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com"
+                class="footer__link"
+              >
                 <svg class="footer__icon">
                   <use xlink:href="img/sprite.svg#in"></use>
                 </svg>
@@ -250,11 +270,11 @@
               required
             />
           </div>
-          <textarea
+          <!-- <textarea
             class="message modal__message"
             placeholder="Сообщение"
             name="message"
-          ></textarea>
+          ></textarea> -->
           <div class="modal__block">
             <button class="button modal__button">Отправить</button>
             <span class="modal__info">* Обязательное поле</span>
@@ -264,7 +284,15 @@
       <!-- /.modal__dialog -->
     </div>
     <!-- /.modal -->
-
+    <div id="toTop">
+      <svg class="to-top">
+        <use xlink:href="img/sprite.svg#icon-top"></use>
+      </svg>
+    </div>
+    <!-- <div class="circle">
+      <div class="circle__left"></div>
+      <div class="circle__right"></div>
+    </div> -->
     <script defer src="js/jquery-3.6.0.min.js"></script>
     <script defer src="js/swiper-bundle.min.js"></script>
     <!-- <script src="js/slick.js"></script> -->

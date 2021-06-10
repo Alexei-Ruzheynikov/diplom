@@ -79,10 +79,10 @@
     .owl-next
         position: relative
         z-index: -10
-        left: -30px
+        left: -7px
         &::after
-            left: 25px
-            top: -11px
+            left: 0
+            top: 0
     .subscription
         &__title
             font-size: 32px
@@ -140,7 +140,7 @@
     .owl-nav
         right: 30px
     .owl-next:after
-        left: 17px
+        left: 0
     .advice-card
         max-width: 340px
         width: 340px
@@ -242,9 +242,11 @@
                 fill: $third
     .history
         &-medium
-            &__icon
-                &:hover
-                    fill: $second
+            &:hover
+                .history
+                    &-medium
+                        &__icon
+                            fill: $second
         &-bottom
             &__icon
                 &:hover
@@ -254,8 +256,33 @@
             &:hover
                 .unpublished-slider__img
                     filter: none
+    .thanks
+        &__button
+            &:hover
+                color: $second
     .modal__dialog
         width: 368px
+    .owl-next
+        left: -17px
+    .modal__dialog
+        padding-top: 35px
+        padding-bottom: 35px
+    .modal__input-group
+        min-height: 75px
+    .modal__close
+        top: 40px
+    .modal__dialog
+        overflow-y: auto
+        max-height: 100vh
+        padding-top: 35px
+        padding-bottom: 35px
+    .history
+        &-medium
+            &__link
+                left: 300px
+                top: 49%
+            &__icon
+                left: 38px
 @media (max-width: 767px)
     .container
         max-width: 576px
@@ -342,6 +369,7 @@
                 width: 537px
                 left: 0px
     .catalog
+        min-height: 604px
         &-slider
             &__slide
                 max-width: 250px
@@ -383,11 +411,7 @@
             display: flex
             flex-direction: column-reverse
             align-items: flex-start
-    .modal__dialog
-        overflow-y: auto
-        max-height: 100vh
-        padding-top: 55px
-        padding-bottom: 55px
+
     .modal__close
         top: 30px
     .modal__info
@@ -397,6 +421,14 @@
         &_mobile-visible
             overflow-y: auto
             max-height: 100vh
+    .owl-next
+        left: -24px
+    .history
+        &-medium
+            &__link
+                left: 238px
+            &__icon
+                left: 38px
 @media (max-width: 576px)
     .container
         max-width: 480px
@@ -444,6 +476,7 @@
                 width: 400px
     .catalog
         margin-bottom: 40px
+        
         &__title
             font-size: 18px
         &__subtitle
@@ -488,12 +521,22 @@
         &-wrap
             padding-top: 50px
     .modal__input
-        height: 40px
+        // height: 40px
+        padding-top: 10px
+        padding-bottom: 10px
     .modal__input-group
-        min-height: 67px
+        min-height: 64px
     // .subscibe__input
     //     max-height: 100%
     //     padding-top: 17px
+    .owl-next
+        left: -16px
+    .history
+        &-medium
+            &__link
+                left: 194px
+            // &__icon
+            //     left: 38px
 @media (max-width: 480px)
     .container, .navbar__container
         max-width: 280px
@@ -719,6 +762,7 @@
     //     padding: 0 10px
     .catalog
         margin-bottom: 125px
+        min-height: 447px
         &__slider
             &_mobile
                 &-visible
@@ -770,10 +814,11 @@
         margin-top: 14px
     .owl-next
         right: 119px
+        left: -132px
         &::after
             width: 48px
             height: 48px
-            left: -102px
+            left: 0
             top: -2px
     .owl-nav
         top: 99%
@@ -1294,3 +1339,12 @@
                 left: -232px
                 background-color: red
                 display: none
+    .history
+        &-medium
+            &__link
+                width: 56px
+                height: 56px
+                left: 122px
+                top: 50%
+            &__icon
+                left: 20px

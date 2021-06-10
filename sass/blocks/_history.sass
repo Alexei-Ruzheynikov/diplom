@@ -30,6 +30,23 @@
             text-align-last: left
     &-medium
         margin-bottom: -70px
+        position: relative
+        &__link
+            width: 100px
+            height: 100px
+            border-radius: 100%
+            display: block
+            background-color: $light
+            position: relative
+            top: 50%
+            transform: translateY(-50%)
+            left: 453px
+            z-index: 43 
+            &:hover
+                .history
+                    &-medium
+                        &__icon
+                            fill: lighten($second, 15%)
         &__video
             // background-color: red
             position: relative
@@ -48,12 +65,11 @@
             height: 39px
             fill: $second
             position: absolute
-            top: 50%
+            top: 53%
             transform: translateY(-50%)
-            left: 488px
+            left: 36px
             z-index: 96  
-            &:hover
-                fill: lighten($second, 15%)
+            
         &:after
             content: ""
             background-repeat: no-repeat
@@ -62,11 +78,12 @@
             width: 100px
             height: 100px
             border-radius: 100%
-            background-color: $light
+            background-color: transparent
             position: relative
             left: 453px
             top: -243px
             z-index: 5
+            cursor: pointer
     &-bottom
         display: flex
         justify-content: space-between
