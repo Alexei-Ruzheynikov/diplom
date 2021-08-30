@@ -4,6 +4,7 @@ Diplom
 
 # Ссылка на работу
 https://alexei-ruz.mainweb-planet.ru/ehya/
+
 Дипломный проект на курсе Веб Старт от Glo Academy. Автор курса — Артем Исламов.
 
 Проект выполняет
